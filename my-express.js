@@ -17,13 +17,11 @@ function express()
 
         //verification if path exist
         if(path){
-
             path(req,res)
         }
         else
         {
             res.send('Path not found');
-
         }
     });
 
@@ -32,7 +30,7 @@ function express()
         server.listen(port);
         console.log("listening on port : " , port);
     }
-    return {listen:listen, get:routes.get}
+    return {listen:listen, get:router.get}
 
 }
 module.exports = express;
