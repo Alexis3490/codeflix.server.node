@@ -1,5 +1,5 @@
-var express = require('./my-express');
-var app = express();
+const express = require('./my-express');
+const app = express();
 
 app.get("/",function(req,res)
 {
